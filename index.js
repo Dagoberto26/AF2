@@ -9,7 +9,7 @@
   };
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
-  const u = firebase.firestore();
+  //const u = firebase.firestore();
   
 
 
@@ -181,8 +181,24 @@ function tw(){
   });
 }
 
-const documento = document.getElementById("#ftarea")
+/* const documento = document.getElementById("#fdoc")
 
-documento.addEventListener("submit", e => {
-  console.log("ba bien")
-})
+const guardar = (titulo, describsion) => 
+  u.collection("task").doc().set({
+    titulo,
+    describsion
+  });
+
+  documento.addEventListener('submit', async (e) => {
+  e.preventDefault()
+
+  const titulo = documento["ti"];
+  const describsion = documento["des"];
+
+  await guardar (titulo.value, describsion.value )
+
+  documento.reset();
+  titulo.focus();
+
+  console.log(titulo, describsion);
+})*/
